@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	<EditText 
+	    android:id="@+id/etxtv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:hint="@string/shuru"
+	    />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="@string/保存"/>
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="@string/xianshi"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:id="@+id/txtv"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/xianshiyemian"
+	    />
+	
+	<ListView 
+	    android:id="@+id/lv"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    ></ListView>
+</LinearLayout>
